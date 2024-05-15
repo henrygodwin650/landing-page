@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+:root {
+    --primary-color: #B63636;
+    --dark-color: #222222;
+    --light-color: #cccccc;
+    --secondary-color: #336A98;
+    --acent-color: #33B973;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+header {
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 20%;
+    margin: 0.5rem auto 2rem auto;
+    overflow: hidden;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 2.8rem;
+    font-size: 1.3rem;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+}
+
+.hero-area {
+    height: 65vh;
+    background: linear-gradient(50deg, rgba(6, 139, 117, 0.3), rgba(255, 0, 150, 0.3)), url("./images/garden-design.jpeg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-area h2 {
+    width: 80%;
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0.2rem 0.2rem #222222;
+}
+
+.about-us {
+    width: 80vw;
+    margin: 4rem auto;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-us h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.about-us div p {
+    margin-bottom: 0.5rem;
+}
+
+.about-us .left-about p:nth-last-child(1) {
+    margin-bottom: 1rem;
+}
+.about-us .btn {
+    padding: 0.5rem 0.8rem;
+    background-color: var(--acent-color);
+    outline: none;
+    border: none;
+    border-radius: 95px;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.about-us .right-about {
+    text-align: center;
+}
+
+
+.services-offered {
+    width: 80vw;
+    margin: 2rem auto;
+}
+
+.services-offered h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.services-offered > p {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.services-offered .services-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.9rem;
+}
+
+.services-offered .services-section h4 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.services-offered .services-section p {
+    /* text-align: justify; */
+    margin-bottom: 1rem;
+}
+
+.services-offered .services-section a {
+    padding: 0.7rem 0.8rem;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: 95px;
+    color: white;
+    align-self: center;
+}
+
+.services-offered .services-section img {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 15px 0px 15px 0;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 80vw;
+    margin: 4rem auto;
+    border-top: solid #ccc 2px;
+    height: 20vh;
+    align-items: center;
+}
+
+/* .footer-left {
+    margin-left: 4rem;
+} */
+
+.footer-right {
+    width: 25vw;
+}
+
+footer img {
+    width: 5%;
+}
+
+@media only screen and (max-width: 820px) {
+    nav ul {
+        gap: 1.0rem;
+        font-size: 1.0rem;
+    }
+
+    .hero-area h2 {
+        font-size: 2.5rem;
+    }
+    
+    .about-us {
+        display: block;
+        margin-top: 0;
+    }
+
+    .about-us h2 {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .about-us .right-about {
+        margin-top: 2rem;
+    }
+
+    .about-us img {
+        width: 100%;
+    }
+
+    .services-offered .services-section{
+        display: block;
+        margin-top: 2rem auto 4rem 0;
+    }
+
+    .services-offered h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .services-offered .services-section article {
+        margin-bottom: 4rem;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-right {
+        width: 80vw;
+        margin-top: 1rem;
+    }
+
+    footer img {
+        margin-top: 1rem;
+    }
+    
+}
